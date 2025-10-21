@@ -95,6 +95,20 @@
       margin: 5px 0;
     }
 
+    .warning-box {
+  display: inline-block;
+  border: 1px solid #ff4d4d;
+  background: rgba(255, 50, 50, 0.1);
+  color: #ff7070;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  font-style: italic;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
     .discussion {
       margin-top: 25px;
       text-align: left;
@@ -142,7 +156,7 @@
     <section id="outlooks">
       <h2>Outlooks</h2>
       <img id="outlookImage" src="outlooks/" alt="Latest Outlook" class="outlook-image" onerror="showNoOutlook()">
-<p id="noOutlookMessage" style="display:none; color:#ff7070; font-style:italic;">⚠️ No active outlook available.</p>
+<p id="noOutlookMessage" class="warning-box" style="display:none;">⚠️ No active outlook available.</p>
       <p class="notice">⚠️ These outlooks are not official.</p>
 
       <div class="details">
@@ -164,7 +178,7 @@
     <section id="regional">
       <h2>Detailed / Regional View</h2>
       <img id="regionalImage" src="outlooks/" alt="Regional Outlook" class="regional-image" onerror="showNoRegionalOutlook()">
-<p id="noRegionalMessage" style="display:none; color:#ff7070; font-style:italic;">⚠️ No active regional outlook available.</p>
+<p id="noRegionalMessage" class="warning-box" style="display:none;">⚠️ No active regional outlook available.</p>
       <p class="notice">⚠️ These outlooks are not official.</p>
 
       <div class="details">
