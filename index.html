@@ -22,12 +22,24 @@
       top: 0;
       z-index: 10;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      transition: all 0.3s ease;
+    }
+
+    /* When scrolled, header shrinks */
+    header.shrink {
+      padding: 8px;
+      background: #141414;
     }
 
     header h1 {
       margin: 0;
       font-size: 2em;
       color: #ffffff;
+      transition: font-size 0.3s ease;
+    }
+
+    header.shrink h1 {
+      font-size: 1.5em;
     }
 
     main {
@@ -108,7 +120,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header id="main-header">
     <h1>European Windstorm Prediction Center</h1>
   </header>
 
@@ -155,5 +167,16 @@
   <footer>
     &copy; 2025 European Windstorm Prediction Center
   </footer>
+
+  <script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('shrink');
+      } else {
+        header.classList.remove('shrink');
+      }
+    });
+  </script>
 </body>
 </html>
