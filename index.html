@@ -141,7 +141,8 @@
     <!-- Outlook Section -->
     <section id="outlooks">
       <h2>Outlooks</h2>
-      <img src="outlooks/01_09_20265.png" alt="Latest Outlook" class="outlook-image">
+      <img id="outlookImage" src="outlooks/" alt="Latest Outlook" class="outlook-image" onerror="showNoOutlook()">
+<p id="noOutlookMessage" style="display:none; color:#ff7070; font-style:italic;">⚠️ No active outlook available.</p>
       <p class="notice">⚠️ These outlooks are not official.</p>
 
       <div class="details">
@@ -162,7 +163,8 @@
     <!-- Detailed / Regional View Section -->
     <section id="regional">
       <h2>Detailed / Regional View</h2>
-      <img src="outlooks/01_10_20265_close.png" alt="Regional Outlook" class="regional-image">
+      <img id="regionalImage" src="outlooks/" alt="Regional Outlook" class="regional-image" onerror="showNoRegionalOutlook()">
+<p id="noRegionalMessage" style="display:none; color:#ff7070; font-style:italic;">⚠️ No active regional outlook available.</p>
       <p class="notice">⚠️ These outlooks are not official.</p>
 
       <div class="details">
@@ -202,6 +204,20 @@
 
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
+    function showNoOutlook() {
+  const img = document.getElementById('outlookImage');
+  const msg = document.getElementById('noOutlookMessage');
+  img.style.display = 'none';
+  msg.style.display = 'block';
+}
+
+function showNoRegionalOutlook() {
+  const img = document.getElementById('regionalImage');
+  const msg = document.getElementById('noRegionalMessage');
+  img.style.display = 'none';
+  msg.style.display = 'block';
+}
+
   </script>
 </body>
 </html>
