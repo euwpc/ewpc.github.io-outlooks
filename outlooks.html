@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>European Windstorm Prediction Center</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #ffffff;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #ffffff;
+      border-bottom: 2px solid #444;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p.notice {
+      color: #ff7070;
+      font-size: 0.9em;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .outlook-image, .regional-image {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+      margin-top: 15px;
+    }
+
+    .details {
+      margin-top: 15px;
+      font-size: 1em;
+      color: #cccccc;
+      text-align: left;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .details p {
+      margin: 5px 0;
+    }
+
+    .discussion {
+      margin-top: 25px;
+      text-align: left;
+      background: #181818;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .discussion h3 {
+      margin-top: 0;
+      font-size: 1.3em;
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #222;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>European Windstorm Prediction Center</h1>
+  </header>
+
+  <main>
+    <!-- Outlook Section -->
+    <section id="outlooks">
+      <h2>Outlooks</h2>
+      <img src="latest_outlook.png" alt="Latest Outlook" class="outlook-image">
+      <p class="notice">⚠️ These outlooks are not official.</p>
+
+      <div class="details">
+        <p><strong>Issued:</strong> [Insert date/time here]</p>
+        <p><strong>Current conditions:</strong> [Insert current weather summary here]</p>
+        <p><strong>Expected winds:</strong> [Insert wind speed or regions here]</p>
+        <p><strong>Next update:</strong> [Insert next update time]</p>
+      </div>
+
+      <div class="discussion">
+        <h3>Discussion</h3>
+        <p>[Insert your outlook discussion here — describe areas of concern, model trends, and forecast confidence.]</p>
+      </div>
+    </section>
+
+    <!-- Detailed / Regional View Section -->
+    <section id="regional">
+      <h2>Detailed / Regional View</h2>
+      <img src="regional_outlook.png" alt="Regional Outlook" class="regional-image">
+      <p class="notice">⚠️ These outlooks are not official.</p>
+
+      <div class="details">
+        <p><strong>Issued:</strong> [Insert date/time here]</p>
+        <p><strong>Current conditions:</strong> [Insert conditions here]</p>
+        <p><strong>Expected winds:</strong> [Insert expected winds]</p>
+        <p><strong>Next update:</strong> [Insert time]</p>
+      </div>
+
+      <div class="discussion">
+        <h3>Discussion</h3>
+        <p>[Insert regional/detailed discussion here — explain storm development and specific regional impacts.]</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 European Windstorm Prediction Center
+  </footer>
+</body>
+</html>
